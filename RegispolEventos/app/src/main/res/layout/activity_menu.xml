@@ -1,9 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".menu">
+    tools:context=".menu"
+    android:background="@drawable/fondo1">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido"
+            android:textSize="45dp"
+            android:gravity="center"
+            android:layout_marginTop="35dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnCursos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="60dp"
+            android:textColor="@color/black"
+            android:text="Crear Cursos"
+            android:textStyle="bold"
+            app:backgroundTint="#C9E6F3" />
+
+        <Button
+            android:id="@+id/btnListCurso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="60dp"
+            android:text="Lista de Eventos"
+            android:textStyle="bold"
+            app:backgroundTint="#C9E6F3" />
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="60dp"
+            android:text="Salir"
+            android:textStyle="bold"
+            app:backgroundTint="#C9E6F3" />
+    </LinearLayout>
+</LinearLayout>
