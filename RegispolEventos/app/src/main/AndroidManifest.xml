@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.regispoleventos">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -9,8 +10,16 @@
         android:roundIcon="@mipmap/ic_portada_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RegispolEventos">
-        <activity android:name=".menu"></activity>
-        <activity android:name=".MainActivity"
+        <activity android:name=".lista_eventos"></activity>
+        <activity android:name=".crear_evento" />
+        <activity android:name=".menu_asistente" />
+        <activity android:name=".menu_principal" />
+        <activity
+            android:name=".login"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".menu_profesor" />
+        <activity
+            android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

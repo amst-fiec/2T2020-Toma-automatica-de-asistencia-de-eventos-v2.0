@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".menu"
+    tools:context=".menu_asistente"
     android:background="@drawable/fondo1">
 
     <LinearLayout
@@ -29,8 +29,9 @@
             android:layout_marginLeft="60dp"
             android:layout_marginTop="35dp"
             android:layout_marginRight="60dp"
+            android:onClick="listaEventos"
+            android:text="Ver Eventos"
             android:textColor="@color/black"
-            android:text="Crear Cursos"
             android:textStyle="bold"
             app:backgroundTint="#C9E6F3" />
 
@@ -39,10 +40,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
-            android:textColor="@color/black"
             android:layout_marginTop="15dp"
             android:layout_marginRight="60dp"
-            android:text="Lista de Eventos"
+            android:text="Ver Asistencias"
+            android:textColor="@color/black"
             android:textStyle="bold"
             app:backgroundTint="#C9E6F3" />
 
@@ -54,6 +55,7 @@
             android:layout_marginTop="15dp"
             android:textColor="@color/black"
             android:layout_marginRight="60dp"
+            android:onClick="salir"
             android:text="Salir"
             android:textStyle="bold"
             app:backgroundTint="#C9E6F3" />
